@@ -1,14 +1,5 @@
 {
   "compilerOptions": {
-    "plugins": [
-      {
-        "name": "ts-lit-plugin",
-        "strict": true,
-        "rules": {
-          "no-unknown-event": "error"
-        }
-      }
-    ],
     "target": "ES2019",
     "module": "ES2020",
     "removeComments": true,
@@ -16,13 +7,24 @@
     "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
     "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true,
+        "rules": {
+          "no-unknown-event": "error"
+        }
+      },
+      { 
+        "transform": "@magic-works/ttypescript-browser-like-import-transformer", 
+        "after": true,
+        "bareModuleRewrite": "unpkg",
+      },
+    ],
   },
-  "baseUrl": "./",
-  "paths": { "*": ["web_modules/.types/*"] },
-  "skipLibCheck": true,
   "include": [
     "src/ts/**/*.ts",
-    "web_modules"
   ],
   "exclude": [
     "node_modules",
