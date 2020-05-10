@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "lit-html": "https://cdn.pika.dev/pin/lit-html@v1.2.1-9MYIKzuAklEkQsSL4H7e/lit-html.js"
+  }
+}

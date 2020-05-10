@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true,
+        "rules": {
+          "no-unknown-event": "error"
+        }
+      }
+    ],
+    "target": "ES2019",
+    "module": "ES2020",
+    "removeComments": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+  },
+  "baseUrl": "./",
+  "paths": { "*": ["web_modules/.types/*"] },
+  "skipLibCheck": true,
+  "include": [
+    "src/ts/**/*.ts",
+    "web_modules"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
