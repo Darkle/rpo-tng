@@ -16,10 +16,11 @@
           "no-unknown-event": "error"
         }
       },
-      { 
-        "transform": "@magic-works/ttypescript-browser-like-import-transformer", 
+      {
+        "transform": "@magic-works/ttypescript-browser-like-import-transformer",
         "after": true,
-        "bareModuleRewrite": "unpkg",
+        "bareModuleRewrite": "snowpack",
+        "webModulePath": "../web_modules/",
       },
     ],
   },

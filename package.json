@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "snowpack --dest src/web_modules",
     "dev": "concurrently \"npm:dev:*\"",
     "dev:browsersync": "cd src && browser-sync --server --port 8888 --watch --no-open --no-ghost-mode --no-notify --no-ui --https",
     "dev:typescript": "ttsc --watch --sourceMap",
     "build": "run-s build:**",
     "build:eslint": "eslint \"src/ts/**/*.ts\" --quiet",
     "build:lit-analyzer": "lit-analyzer \"src/ts/**/*.ts\" --strict --rules.no-unknown-event error",
-    "build:typescript": "NODE_ENV=\"production\" ttsc",
+    "build:typescript": "ttsc",
     "build:copy-to-dist": "ncp src dist",
+    "build:snowpack": "snowpack --optimize --no-source-map --clean --stat --dest dist/web_modules",
     "build:minify": "minify --recursive --output dist dist",
     "build:vendor-size-check": "chalk blue bold 'Vendor Libs Size Check:\n\n' && bundlesize -f \"dist/ts/web_modules/**/*.ts\" -s 35kB",
     "build:total-size-check": "ncat 'dist/**/*.js' -o ./total-bundle.js > /dev/null && chalk blue bold 'Total JS Size Check:\n\n' && bundlesize -f ./total-bundle.js -s 70kB && trash ./total-bundle.js",
@@ -20,11 +22,17 @@
     "lighthouse:lighthouse": "lighthouse https://localhost:8888 --chrome-flags='--ignore-certificate-errors' --view --only-categories=accessibility,best-practices,performance,seo --quiet --output-path ./lighthouse-report.html && trash ./lighthouse-report.html",
     "lighthouse:kill-serve": "fkill :8888"
   },
+  "browserslist": "last 3 Chrome version, Firefox ESR, last 1 safari version, last 3 ios version",
+  "snowpack": {
+    "webDependencies": [
+      "lit-html"
+    ]
+  },
   "dependencies": {
     "lit-html": "^1.2.1"
   },
   "devDependencies": {
-    "@magic-works/ttypescript-browser-like-import-transformer": "^2.0.4",
+    "@magic-works/ttypescript-browser-like-import-transformer": "^2.0.5",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
     "browser-sync": "^2.26.7",
@@ -40,6 +48,7 @@
     "ncat": "^4.0.2",
     "ncp": "^2.0.0",
     "npm-run-all": "^4.1.5",
+    "snowpack": "^1.7.1",
     "trash-cli": "^3.0.0",
     "ts-lit-plugin": "^1.1.10",
     "ts-typie": "^1.1.1",

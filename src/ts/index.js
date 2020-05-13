@@ -1,5 +1,4 @@
-import { html } from "https://unpkg.com/lit-html@1.2.1?module";
+import { html } from "../web_modules/lit-html.js";
 html `<my-element></my-element>`;
 html `<div>`;
 html `<input @iinput="${console.log}" />`;
-console.log("bar");
