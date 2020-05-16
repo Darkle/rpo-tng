@@ -1,5 +1,5 @@
-import { html, render } from "lit-html.js";
-import { foo } from "./asd/thing.js";
+import { html, render } from "/web_modules/lit-html.js";
+import { foo } from "asd/thing_yJvp7ExdjymITUPEu3Jd.js";
 foo(); // html`<my-element></my-element>`
 
 const divver = () => html`<div>`;

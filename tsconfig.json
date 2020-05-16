@@ -8,7 +8,6 @@
     "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
     "experimentalDecorators": true,
-    "noEmit": true,
     "allowJs": true,
     "moduleResolution": "node",
     "plugins": [
