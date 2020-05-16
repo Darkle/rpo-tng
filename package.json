@@ -53,7 +53,7 @@
     "ts-lit-plugin": "^1.1.10",
     "ts-typie": "^1.1.1",
     "ttypescript": "^1.5.10",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   },
   "repository": {
     "type": "git",

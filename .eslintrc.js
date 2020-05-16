@@ -67,10 +67,10 @@ module.exports = {
       }
     ],
     'functional/no-conditional-statement': 'error',
-    'functional/no-expression-statement': ['error', {ignorePattern: ['html', 'console.log']}],
-    'functional/functional-parameters': 'error',    
-    'functional/immutable-data': 'error',    
-    'functional/no-promise-reject': 'off',    
+    'functional/no-expression-statement': ['error', {ignorePattern: ['html', 'console.log', 'render']}],
+    'functional/functional-parameters': 'error',
+    'functional/immutable-data': 'error',
+    'functional/no-promise-reject': 'off',
     'lit/attribute-value-entities': 'error',
     'lit/binding-positions': 'error',
     'lit/no-duplicate-template-bindings': 'error',
@@ -93,7 +93,7 @@ module.exports = {
     'max-lines-per-function': [
       'error',
       {
-        max: 22,
+        max: 20,
         skipComments: true
       }
     ],
