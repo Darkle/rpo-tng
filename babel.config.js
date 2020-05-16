@@ -8,6 +8,7 @@ const regexForRegularJsModules = "^\.\/(.+?)$"
 // https://regex101.com/r/C5Ja4s/1
 const regexForWebModules = "^(?!\.\/)(.+?)$"
 const webModulesDir = path.join(__dirname, 'src', 'web_modules')
+const importMap = path.join(__dirname, 'src', 'web_modules', 'import-map.json')
 
 module.exports = {
   presets: [
@@ -28,11 +29,8 @@ module.exports = {
     ],
     ['transform-rename-import', {
       replacements: [
-        { original: regexForRegularJsModules, replacement: ISDEV ? './$1.js' : `./$1_${process.env.CACHE_BUST_STRING}.js` },
+        { original: regexForRegularJsModules, replacement: ISDEV ? '$1' : `./$1_${process.env.CACHE_BUST_STRING}.js` },
       ]
-    }],
-    ['snowpack/assets/babel-plugin.js', {
-      webModulesDir
-    }],
+    }]
   ]
 }

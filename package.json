@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "snowpack --dest src/web_modules",
+    "prepare": "snowpack install --dest src/web_modules --installTypes",
     "dev": "concurrently \"npm:dev:*\"",
     "dev:browsersync": "cd src && browser-sync --server --port 8888 --watch --no-open --no-ghost-mode --no-notify --no-ui --https",
     "dev:babel": "NODE_ENV=development babel -x .ts,.tsx src/ts --out-dir src/ts --ignore \"src/web_modules/**/*.*\" --source-maps --watch",
@@ -15,13 +15,10 @@
     "build:rename-js-files2": "laren \"./dist/ts/*.js\" \"f => f.replace('.js', '_' + process.env.CACHE_BUST_STRING + '.js')\""
   },
   "browserslist": "last 3 Chrome version, Firefox ESR, last 1 safari version, last 3 ios version",
-  "snowpack": {
-    "webDependencies": [
-      "lit-html"
-    ]
+  "webDependencies": {
+    "lit-html": "^1.2.1"
   },
   "dependencies": {
-    "lit-html": "^1.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -52,10 +49,12 @@
     "pad-rename": "^1.1.0",
     "random-generator-cli": "^2.4.1",
     "recursive-rename": "^3.0.0",
-    "snowpack": "^1.7.1",
+    "snowpack": "^2.0.0-beta.20",
     "trash-cli": "^3.0.0",
     "ts-lit-plugin": "^1.1.10",
+    "ts-rename-import-plugin": "^1.1.2",
     "ts-typie": "^1.1.1",
+    "ttypescript": "^1.5.10",
     "typescript": "^3.9.2"
   },
   "repository": {

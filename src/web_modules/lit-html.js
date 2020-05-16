@@ -1198,4 +1198,8 @@ const html = (strings, ...values) => new TemplateResult(strings, values, 'html',
  */
 const svg = (strings, ...values) => new SVGTemplateResult(strings, values, 'svg', defaultTemplateProcessor);
 
+
+var litHtml = null;
+
+export default litHtml;
 export { AttributeCommitter, AttributePart, BooleanAttributePart, DefaultTemplateProcessor, EventPart, NodePart, PropertyCommitter, PropertyPart, SVGTemplateResult, Template, TemplateInstance, TemplateResult, createMarker, defaultTemplateProcessor, directive, html, isDirective, isIterable, isPrimitive, isTemplatePartActive, noChange, nothing, parts, removeNodes, render, reparentNodes, svg, templateCaches, templateFactory };
