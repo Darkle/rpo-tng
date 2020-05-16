@@ -1,4 +1,4 @@
-import {html, render} from '../web_modules/lit-html'
+import {html, render} from 'lit-html'
 
 import {foo} from './asd/thing'
 foo()
@@ -35,3 +35,9 @@ console.log('asd')
 // const car = factory.create('BMW', 'Series 3s')
 // console.log(car)
 render(divver(), document.body)
+
+const fas = () => console.log('fas')
+
+export {
+  fas
+}

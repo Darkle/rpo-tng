@@ -8,11 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
     "experimentalDecorators": true,
-    "allowJs": true,
     "moduleResolution": "node",
-    "skipLibCheck": true,
-    "baseUrl": "./",
-    "paths": { "*": ["web_modules/.types/*"] },
     "plugins": [
       {
         "name": "ts-lit-plugin",
