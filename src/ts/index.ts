@@ -1,5 +1,7 @@
 import {html, render} from 'lit-html'
 
+import {foo} from './asd/thing'
+foo()
 // html`<my-element></my-element>`
 const divver = () => html`<div>`
 html`<input @iinput="${console.log}" />`

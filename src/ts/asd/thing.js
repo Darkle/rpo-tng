@@ -1,1 +1,3 @@
-"use strict";
+function foo() {}
+
+export { foo };
