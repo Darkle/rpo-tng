@@ -4,7 +4,7 @@
 
 Example of the data you get back for an image from the reddit json api: https://gist.github.com/Darkle/377a8e5f3bb155885d26a0a293806af3
 
-###### Build Setup:
+##### Build Setup:
 
 * Using [Typescript](https://www.typescriptlang.org/)
 * Using Babel to transpile Typescript to js so we can use the `transform-rename-import` plugin for cache busting.
@@ -17,7 +17,7 @@ Example of the data you get back for an image from the reddit json api: https://
 * Note the [Lighthouse](https://github.com/GoogleChrome/lighthouse) test is missing the pwa test as it kept erroring out.
 * Using https://go.fast.io/ for hosting. When deploy new build (dist) to github, it will import those changes automatically.
 
-####### Cache Busting:
+###### Cache Busting:
 
 Since we are not using a bundler, we need to do cache-busting for js manually.
 
@@ -27,7 +27,7 @@ Since we are not using a bundler, we need to do cache-busting for js manually.
 4. The `build:html-script-src-replace` script also uses the `CACHE_BUST_STRING` value internally (it is available via process.env.CACHE_BUST_STRING) to alter the html script src value to the new file name that includes the `CACHE_BUST_STRING` value.
 
 
-###### Debugging:
+##### Debugging:
 * To debug the service worker, download chromium and start it with `./chrome --unsafely-treat-insecure-origin-as-secure=https://192.168.1.2:8888/ --ignore-certificate-errors `
     * https://www.chromium.org/blink/serviceworker/service-worker-faq
 We run tsc --watch in dev mode and build with noEmit: true in the tsconfig.json to enable checking for typescript errors.
