@@ -14,4 +14,19 @@ function warnUser(a, b) {
 }
 console.log(isDone, decimal, hex, binary, octal, warnUser);
 console.log('asd');
+class Car {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class FactoryClass {
+    create(name) {
+        return new Car(name);
+    }
+}
+const factory = new FactoryClass();
+const car = factory.create('BMW', 'Series 3s');
+console.log(car);
 render(divver(), document.body);
+const fas = () => console.log('fas');
+export { fas };
