@@ -1,6 +1,6 @@
-import {html, render} from 'lit-html'
+import { html, render } from 'lit-html'
 
-import {foo} from './asd/thing'
+import { foo } from './asd/thing'
 foo()
 // html`<my-element></my-element>`
 const divver = () => html`<div>`
@@ -11,7 +11,7 @@ const decimal: number = 6
 const hex: number = 0xf00d
 const binary: number = 0b1010
 const octal: number = 0o744
-function warnUser(a:number, b:number): number {
+function warnUser(a: number, b: number): number {
   console.log("This is my warning message")
   return a + b
 }
