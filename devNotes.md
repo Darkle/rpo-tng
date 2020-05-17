@@ -7,10 +7,10 @@ Example of the data you get back for an image from the reddit json api: https://
 ##### Build Setup:
 
 * Using [Typescript](https://www.typescriptlang.org/)
-* Using Babel to transpile Typescript to js so we can use the `transform-rename-import` plugin for cache busting.
+* Using [Babel](https://babeljs.io/) to transpile Typescript to js so we can use the `transform-rename-import` plugin for cache busting.
 * [Snowpack](https://www.snowpack.dev/) - for npm modules.
-* [Browser-Sync](https://browsersync.io/docs/command-line) - gives us a server, reload on change and also https as that is needed for a few things (eg service worker)
-* [Minify](https://github.com/tdewolff/minify/blob/master/cmd/minify/README.md) - is a go app. Using this for minifying as terser does not yet support optional chaining syntax.
+* [Browser-Sync](https://browsersync.io/docs/command-line) - gives us a server, reload on change and also https as a few things require https (eg service worker)
+* [Minify](https://github.com/tdewolff/minify/blob/master/cmd/minify/README.md) (its a go app). Using this for minifying for now as terser [does not yet support optional chaining syntax](https://github.com/terser/terser/issues/643).
 * [Ncp](https://github.com/AvianFlu/ncp) - copies files over to dist
 * [Ncat](https://github.com/pvdlg/ncat) - lets us concatinate all js files together, which allows us to check the total app js size with [bundlesize](https://github.com/siddharthkp/bundlesize) (although note that some of the `web_modules` are loaded using dynamic imports)
 * The `lighthouse:serve` npm task is for Lighthouse as it needs the page to be served. The `lighthouse:kill-serve` kills this sever after the lighthouse task is completed.
@@ -21,10 +21,10 @@ Example of the data you get back for an image from the reddit json api: https://
 
 Since we are not using a bundler, we need to do cache-busting for js manually.
 
-1. In the `build` npm script, we set `CACHE_BUST_STRING=$(random string)`.
-2. The `build:babel` script uses this variable to rename imports to inlcude the `CACHE_BUST_STRING` value.
-3. The `build:rename-js-files` also uses the `CACHE_BUST_STRING` value to rename the js files in the dist folder to include the `CACHE_BUST_STRING` value.
-4. The `build:html-script-src-replace` script also uses the `CACHE_BUST_STRING` value internally (it is available via process.env.CACHE_BUST_STRING) to alter the html script src value to the new file name that includes the `CACHE_BUST_STRING` value.
+1. In the `build` npm script, we set `CACHE_BUST_STRING=$(random string)` using [random-generator-cli](https://github.com/AmrSaber/random-cli).
+2. The `build:babel` script uses `CACHE_BUST_STRING` to rename imports to inlcude the `CACHE_BUST_STRING` value using the [transform-rename-import](https://github.com/laat/babel-plugin-transform-rename-import) babel plugin.
+3. The `build:rename-js-files` also uses the `CACHE_BUST_STRING` value to rename the js files in the dist folder to include the `CACHE_BUST_STRING` value. It uses [Laren](https://github.com/devmetal/laren) to do this.
+4. The `build:html-script-src-replace` script also uses the `CACHE_BUST_STRING` value internally (it is available via process.env.CACHE_BUST_STRING) to alter the html script src value to the new file name that includes the `CACHE_BUST_STRING` value. It uses [html-script-src-replace](https://gitlab.com/Darkle1/html-script-src-replace) to do this.
 
 
 ##### Debugging:
