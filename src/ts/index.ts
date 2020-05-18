@@ -17,7 +17,7 @@ function warnUser(a: number, b: number): number {
 }
 console.log(isDone, decimal, hex, binary, octal, warnUser)
 console.log('asd')
-
+console.log(obj?.asd?.asd)
 // class Car {
 //     constructor(name) {
 //         this.name = name
