@@ -1,13 +1,13 @@
 {
-	"folders":
-	[
-		{
+  "folders":
+  [
+    {
       "file_exclude_patterns":
       [
         "src/ts/*.js",
         "src/ts/*.js.map"
       ],
-			"path": "."
-		}
-	]
+      "path": "."
+    }
+  ]
 }

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "prepare": "snowpack --dest src/web_modules",
-    "dev": "concurrently \"npm:dev:*\"",
+    "dev": "NODE_ENV=development concurrently \"npm:dev:*\"",
     "dev:browsersync": "cd src && browser-sync --server --port 8888 --watch --no-open --no-ghost-mode --no-notify --no-ui --https",
-    "dev:babel": "NODE_ENV=development babel -x .ts,.tsx src/ts --out-dir src/ts --ignore \"src/web_modules/**/*.*\" --source-maps --watch",
+    "dev:babel": "babel -x .ts,.tsx src/ts --out-dir src/ts --ignore \"src/web_modules/**/*.*\" --source-maps --watch",
     "dev:typescript": "tsc --watch",
     "build": "CACHE_BUST_STRING=$(random string) NODE_ENV=production run-s build:**",
     "build:eslint": "eslint \"src/ts/**/*.ts\" --quiet",
