@@ -12,7 +12,7 @@ const hex: number = 0xf00d
 const binary: number = 0b1010
 const octal: number = 0o744
 function warnUser(a: number, b: number): number {
-  console.log("This is my warning message")
+  console.log("This is my warning messddage")
   return a + b
 }
 function resolveAfter2Seconds() {
