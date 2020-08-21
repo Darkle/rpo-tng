@@ -22,7 +22,9 @@ function resolveAfter2Seconds() {
     }, 2000);
   });
 }
+if(true){
 
+}
 async function asyncCall() {
   console.log('calling');
   const result = await resolveAfter2Seconds();

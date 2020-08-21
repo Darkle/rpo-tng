@@ -42,7 +42,6 @@ module.exports = {
     // '@typescript-eslint/no-throw-literal': 'error',
     // '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
-    '@typescript-eslint/prefer-ts-expect-error': 'error',
     // '@typescript-eslint/prefer-readonly-parameter-types': 'error',
     // '@typescript-eslint/prefer-reduce-type-parameter': 'error',
     // '@typescript-eslint/switch-exhaustiveness-check': 'error',
@@ -66,11 +65,15 @@ module.exports = {
         ignore: [-2, -1, 0, 1, 2, 3]
       }
     ],
-    'functional/no-conditional-statement': 'error',
-    'functional/no-expression-statement': ['error', {ignorePattern: ['html', 'console.log', 'render']}],
-    'functional/functional-parameters': 'error',
-    'functional/immutable-data': 'error',
-    'functional/no-promise-reject': 'off',
+    'array-callback-return': 'error',
+    'callback-return': 'error',
+    'complexity': ['error', 4],
+    'consistent-return': 'error',
+    'eqeqeq': 'error',
+    'functional/immutable-data': ['error', {ignoreImmediateMutation: true}],    
+    'functional/no-promise-reject': 'off',    
+    'guard-for-in': 'error',
+    'handle-callback-err': 'error',
     'lit/attribute-value-entities': 'error',
     'lit/binding-positions': 'error',
     'lit/no-duplicate-template-bindings': 'error',
@@ -82,18 +85,11 @@ module.exports = {
     'lit/no-template-bind': 'error',
     'lit/no-useless-template-literals': 'error',
     'lit/no-value-attribute': 'error',
-    'array-callback-return': 'error',
-    'callback-return': 'error',
-    'complexity': ['error', 4],
-    'consistent-return': 'error',
-    'eqeqeq': 'error',
-    'guard-for-in': 'error',
-    'handle-callback-err': 'error',
     'max-depth': ['error', 3],
     'max-lines-per-function': [
       'error',
       {
-        max: 20,
+        max: 22,
         skipComments: true
       }
     ],
