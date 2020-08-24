@@ -5,7 +5,8 @@
       "file_exclude_patterns":
       [
         "src/ts/*.js",
-        "src/ts/*.js.map"
+        "src/ts/*.js.map",
+        "rpo-tng.sublime-workspace"
       ],
       "path": "."
     }
