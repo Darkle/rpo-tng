@@ -15,6 +15,7 @@ function warnUser(a: number, b: number): number {
   console.log("This is my warning messddage")
   return a + b
 }
+
 function resolveAfter2Seconds() {
   return new Promise(resolve => {
     setTimeout(() => {
