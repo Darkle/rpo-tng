@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "@airbrake/browser": "./@airbrake/browser.js",
-    "lit-html": "./lit-html.js",
-    "litestate": "./litestate.js",
-    "navigo": "./navigo.js"
-  }
-}
