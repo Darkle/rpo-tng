@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";import equals from"./equals.js";var eqProps=_curry3((function(r,e,u){return equals(e[r],u[r])}));export default eqProps;

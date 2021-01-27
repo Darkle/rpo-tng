@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _xdrop from"./internal/_xdrop.js";import slice from"./slice.js";var drop=_curry2(_dispatchable(["drop"],_xdrop,(function(r,o){return slice(Math.max(0,r),1/0,o)})));export default drop;

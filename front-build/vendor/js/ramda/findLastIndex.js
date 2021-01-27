@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _xfindLastIndex from"./internal/_xfindLastIndex.js";var findLastIndex=_curry2(_dispatchable([],_xfindLastIndex,(function(r,n){for(var t=n.length-1;t>=0;){if(r(n[t]))return t;t-=1}return-1})));export default findLastIndex;

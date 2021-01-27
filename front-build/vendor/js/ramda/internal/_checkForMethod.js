@@ -1,0 +1,1 @@
+import _isArray from"./_isArray.js";export default function _checkForMethod(r,t){return function(){var e=arguments.length;if(0===e)return t();var o=arguments[e-1];return _isArray(o)||"function"!=typeof o[r]?t.apply(this,arguments):o[r].apply(o,Array.prototype.slice.call(arguments,0,e-1))}}

@@ -1,0 +1,1 @@
+import _objectIs from"./internal/_objectIs.js";import _curry2 from"./internal/_curry2.js";var identical=_curry2(_objectIs);export default identical;

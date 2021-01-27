@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _reduce from"./internal/_reduce.js";import keys from"./keys.js";var mapObjIndexed=_curry2((function(r,e){return _reduce((function(n,t){return n[t]=r(e[t],t,e),n}),{},keys(e))}));export default mapObjIndexed;

@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import constructN from"./constructN.js";var construct=_curry1((function(r){return constructN(r.length,r)}));export default construct;

@@ -1,0 +1,1 @@
+import _curry2 from"./_curry2.js";import _flatCat from"./_flatCat.js";import map from"../map.js";var _xchain=_curry2((function(r,a){return map(r,_flatCat(a))}));export default _xchain;

@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import map from"./map.js";import prop from"./prop.js";var pluck=_curry2((function(r,p){return map(prop(r),p)}));export default pluck;

@@ -1,0 +1,1 @@
+import take from"../take.js";export default function dropLast(t,e){return take(t<e.length?e.length-t:0,e)}

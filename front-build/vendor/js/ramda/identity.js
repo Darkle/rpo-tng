@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import _identity from"./internal/_identity.js";var identity=_curry1(_identity);export default identity;

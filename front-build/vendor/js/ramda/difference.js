@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _Set from"./internal/_Set.js";var difference=_curry2((function(r,e){for(var t=[],n=0,f=r.length,o=e.length,a=new _Set,d=0;d<o;d+=1)a.add(e[d]);for(;n<f;)a.add(r[n])&&(t[t.length]=r[n]),n+=1;return t}));export default difference;

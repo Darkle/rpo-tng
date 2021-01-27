@@ -1,0 +1,1 @@
+import invoker from"./invoker.js";var join=invoker(1,"join");export default join;

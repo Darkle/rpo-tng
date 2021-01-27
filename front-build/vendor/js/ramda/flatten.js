@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import _makeFlat from"./internal/_makeFlat.js";var flatten=_curry1(_makeFlat(!0));export default flatten;

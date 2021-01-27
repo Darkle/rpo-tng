@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _xdropWhile from"./internal/_xdropWhile.js";import slice from"./slice.js";var dropWhile=_curry2(_dispatchable(["dropWhile"],_xdropWhile,(function(r,i){for(var e=0,l=i.length;e<l&&r(i[e]);)e+=1;return slice(e,1/0,i)})));export default dropWhile;

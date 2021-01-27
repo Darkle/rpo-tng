@@ -1,0 +1,1 @@
+import _concat from"./internal/_concat.js";import _curry2 from"./internal/_curry2.js";var append=_curry2((function(r,n){return _concat(n,[r])}));export default append;

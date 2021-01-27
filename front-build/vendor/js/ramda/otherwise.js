@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _assertPromise from"./internal/_assertPromise.js";var otherwise=_curry2((function(r,e){return _assertPromise("otherwise",e),e.then(null,r)}));export default otherwise;

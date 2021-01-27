@@ -1,0 +1,1 @@
+import _checkForMethod from"./internal/_checkForMethod.js";import _curry1 from"./internal/_curry1.js";import slice from"./slice.js";var tail=_curry1(_checkForMethod("tail",slice(1,1/0)));export default tail;

@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import _dispatchable from"./internal/_dispatchable.js";import _xdropRepeatsWith from"./internal/_xdropRepeatsWith.js";import dropRepeatsWith from"./dropRepeatsWith.js";import equals from"./equals.js";var dropRepeats=_curry1(_dispatchable([],_xdropRepeatsWith(equals),dropRepeatsWith(equals)));export default dropRepeats;

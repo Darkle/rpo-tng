@@ -1,0 +1,1 @@
+import _aperture from"./internal/_aperture.js";import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _xaperture from"./internal/_xaperture.js";var aperture=_curry2(_dispatchable([],_xaperture,_aperture));export default aperture;

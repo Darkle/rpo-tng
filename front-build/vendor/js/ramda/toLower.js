@@ -1,0 +1,1 @@
+import invoker from"./invoker.js";var toLower=invoker(0,"toLowerCase");export default toLower;

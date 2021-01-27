@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _xtakeWhile from"./internal/_xtakeWhile.js";import slice from"./slice.js";var takeWhile=_curry2(_dispatchable(["takeWhile"],_xtakeWhile,(function(e,r){for(var t=0,i=r.length;t<i&&e(r[t]);)t+=1;return slice(0,t,r)})));export default takeWhile;

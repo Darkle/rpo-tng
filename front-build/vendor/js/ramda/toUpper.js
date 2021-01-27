@@ -1,0 +1,1 @@
+import invoker from"./invoker.js";var toUpper=invoker(0,"toUpperCase");export default toUpper;

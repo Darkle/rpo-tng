@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import assocPath from"./assocPath.js";import lens from"./lens.js";import path from"./path.js";var lensPath=_curry1((function(r){return lens(path(r),assocPath(r))}));export default lensPath;

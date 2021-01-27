@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import _toString from"./internal/_toString.js";var toString=_curry1((function(r){return _toString(r,[])}));export default toString;

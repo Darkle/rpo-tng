@@ -1,0 +1,1 @@
+import _arity from"./internal/_arity.js";import _curry2 from"./internal/_curry2.js";import _has from"./internal/_has.js";var memoizeWith=_curry2((function(r,t){var i={};return _arity(t.length,(function(){var a=r.apply(this,arguments);return _has(a,i)||(i[a]=t.apply(this,arguments)),i[a]}))}));export default memoizeWith;

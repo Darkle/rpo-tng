@@ -1,0 +1,1 @@
+export default function _isFunction(t){var n=Object.prototype.toString.call(t);return"[object Function]"===n||"[object AsyncFunction]"===n||"[object GeneratorFunction]"===n||"[object AsyncGeneratorFunction]"===n}

@@ -1,0 +1,1 @@
+import _map from"./internal/_map.js";import identity from"./identity.js";import pickAll from"./pickAll.js";import useWith from"./useWith.js";var project=useWith(_map,[pickAll,identity]);export default project;

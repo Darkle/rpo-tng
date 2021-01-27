@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import drop from"./drop.js";var takeLast=_curry2((function(r,t){return drop(r>=0?t.length-r:0,t)}));export default takeLast;

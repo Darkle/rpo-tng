@@ -1,0 +1,1 @@
+import add from"./add.js";var dec=add(-1);export default dec;

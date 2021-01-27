@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _isString from"./internal/_isString.js";var nth=_curry2((function(r,t){var n=r<0?t.length+r:r;return _isString(t)?t.charAt(n):t[n]}));export default nth;

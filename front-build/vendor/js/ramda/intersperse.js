@@ -1,0 +1,1 @@
+import _checkForMethod from"./internal/_checkForMethod.js";import _curry2 from"./internal/_curry2.js";var intersperse=_curry2(_checkForMethod("intersperse",(function(r,e){for(var t=[],o=0,n=e.length;o<n;)o===n-1?t.push(e[o]):t.push(e[o],r),o+=1;return t})));export default intersperse;

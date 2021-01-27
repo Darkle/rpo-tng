@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";import path from"./path.js";var pathSatisfies=_curry3((function(r,t,a){return r(path(t,a))}));export default pathSatisfies;

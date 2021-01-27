@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";var mapAccumRight=_curry3((function(r,t,c){for(var u=c.length-1,a=[],m=[t];u>=0;)m=r(m[0],c[u]),a[u]=m[1],u-=1;return[m[0],a]}));export default mapAccumRight;

@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";var xor=_curry2((function(r,o){return Boolean(!r^!o)}));export default xor;

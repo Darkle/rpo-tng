@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import curryN from"./curryN.js";import max from"./max.js";import pluck from"./pluck.js";import reduce from"./reduce.js";var anyPass=_curry1((function(r){return curryN(reduce(max,0,pluck("length",r)),(function(){for(var u=0,t=r.length;u<t;){if(r[u].apply(this,arguments))return!0;u+=1}return!1}))}));export default anyPass;

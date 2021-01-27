@@ -1,0 +1,1 @@
+import _checkForMethod from"./internal/_checkForMethod.js";import _curry2 from"./internal/_curry2.js";import reduceBy from"./reduceBy.js";var groupBy=_curry2(_checkForMethod("groupBy",reduceBy((function(r,e){return null==r&&(r=[]),r.push(e),r}),null)));export default groupBy;

@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import equals from"./equals.js";import takeLast from"./takeLast.js";var endsWith=_curry2((function(r,t){return equals(takeLast(r.length,t),r)}));export default endsWith;

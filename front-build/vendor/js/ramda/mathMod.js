@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _isInteger from"./internal/_isInteger.js";var mathMod=_curry2((function(r,t){return _isInteger(r)?!_isInteger(t)||t<1?NaN:(r%t+t)%t:NaN}));export default mathMod;

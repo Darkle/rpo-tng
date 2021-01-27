@@ -1,0 +1,1 @@
+import filter from"./filter.js";import juxt from"./juxt.js";import reject from"./reject.js";var partition=juxt([filter,reject]);export default partition;

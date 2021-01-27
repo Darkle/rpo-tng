@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";var move=_curry3((function(c,e,r){var t=r.length,n=r.slice(),l=c<0?t+c:c,o=e<0?t+e:e,a=n.splice(l,1);return l<0||l>=r.length||o<0||o>=r.length?r:[].concat(n.slice(0,o)).concat(a).concat(n.slice(o,r.length))}));export default move;

@@ -1,0 +1,1 @@
+import add from"./add.js";var inc=add(1);export default inc;

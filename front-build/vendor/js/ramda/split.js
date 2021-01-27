@@ -1,0 +1,1 @@
+import invoker from"./invoker.js";var split=invoker(1,"split");export default split;

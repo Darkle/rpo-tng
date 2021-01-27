@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";import map from"./map.js";import sequence from"./sequence.js";var traverse=_curry3((function(r,e,a){return"function"==typeof a["fantasy-land/traverse"]?a["fantasy-land/traverse"](e,r):sequence(r,map(e,a))}));export default traverse;

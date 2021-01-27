@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import empty from"./empty.js";import equals from"./equals.js";var isEmpty=_curry1((function(r){return null!=r&&equals(r,empty(r))}));export default isEmpty;

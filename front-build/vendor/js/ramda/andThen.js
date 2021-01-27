@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _assertPromise from"./internal/_assertPromise.js";var andThen=_curry2((function(r,e){return _assertPromise("andThen",e),e.then(r)}));export default andThen;

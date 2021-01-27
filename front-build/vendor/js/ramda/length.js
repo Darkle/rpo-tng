@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import _isNumber from"./internal/_isNumber.js";var length=_curry1((function(r){return null!=r&&_isNumber(r.length)?r.length:NaN}));export default length;

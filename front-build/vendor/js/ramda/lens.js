@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import map from"./map.js";var lens=_curry2((function(r,n){return function(t){return function(u){return map((function(r){return n(r,u)}),t(r(u)))}}}));export default lens;

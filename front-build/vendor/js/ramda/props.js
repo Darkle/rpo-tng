@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import path from"./path.js";var props=_curry2((function(r,t){return r.map((function(r){return path([r],t)}))}));export default props;

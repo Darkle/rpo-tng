@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import hasPath from"./hasPath.js";var has=_curry2((function(r,a){return hasPath([r],a)}));export default has;

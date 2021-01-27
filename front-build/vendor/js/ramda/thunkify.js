@@ -1,0 +1,1 @@
+import curryN from"./curryN.js";import _curry1 from"./internal/_curry1.js";var thunkify=_curry1((function(r){return curryN(r.length,(function(){var t=arguments;return function(){return r.apply(this,t)}}))}));export default thunkify;

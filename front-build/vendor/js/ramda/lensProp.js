@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import assoc from"./assoc.js";import lens from"./lens.js";import prop from"./prop.js";var lensProp=_curry1((function(r){return lens(prop(r),assoc(r))}));export default lensProp;

@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import always from"./always.js";import times from"./times.js";var repeat=_curry2((function(r,t){return times(always(r),t)}));export default repeat;

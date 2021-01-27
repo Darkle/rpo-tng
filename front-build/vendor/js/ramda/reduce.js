@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";import _reduce from"./internal/_reduce.js";var reduce=_curry3(_reduce);export default reduce;

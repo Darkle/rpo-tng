@@ -1,0 +1,1 @@
+import _arity from"./internal/_arity.js";import _curry1 from"./internal/_curry1.js";var once=_curry1((function(r){var t,n=!1;return _arity(r.length,(function(){return n?t:(n=!0,t=r.apply(this,arguments))}))}));export default once;

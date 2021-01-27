@@ -1,0 +1,1 @@
+import _concat from"./internal/_concat.js";import _createPartialApplicator from"./internal/_createPartialApplicator.js";import flip from"./flip.js";var partialRight=_createPartialApplicator(flip(_concat));export default partialRight;

@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";var evolve=_curry2((function r(e,o){var n,t,c,f=o instanceof Array?[]:{};for(t in o)c=typeof(n=e[t]),f[t]="function"===c?n(o[t]):n&&"object"===c?r(n,o[t]):o[t];return f}));export default evolve;

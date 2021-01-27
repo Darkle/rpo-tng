@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";var always=_curry1((function(r){return function(){return r}}));export default always;

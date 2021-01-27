@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import equals from"./equals.js";import take from"./take.js";var startsWith=_curry2((function(r,t){return equals(take(r.length,t),r)}));export default startsWith;

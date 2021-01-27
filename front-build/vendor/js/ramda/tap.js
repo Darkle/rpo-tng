@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _xtap from"./internal/_xtap.js";var tap=_curry2(_dispatchable([],_xtap,(function(r,t){return r(t),t})));export default tap;

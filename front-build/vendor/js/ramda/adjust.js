@@ -1,0 +1,1 @@
+import _concat from"./internal/_concat.js";import _curry3 from"./internal/_curry3.js";var adjust=_curry3((function(r,t,n){if(r>=n.length||r<-n.length)return n;var a=(r<0?n.length:0)+r,c=_concat(n);return c[a]=t(n[a]),c}));export default adjust;

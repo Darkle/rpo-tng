@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _dropLastWhile from"./internal/_dropLastWhile.js";import _xdropLastWhile from"./internal/_xdropLastWhile.js";var dropLastWhile=_curry2(_dispatchable([],_xdropLastWhile,_dropLastWhile));export default dropLastWhile;

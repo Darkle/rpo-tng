@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";import always from"./always.js";import over from"./over.js";var set=_curry3((function(r,o,t){return over(r,always(o),t)}));export default set;

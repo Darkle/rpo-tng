@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _has from"./internal/_has.js";import isNil from"./isNil.js";var hasPath=_curry2((function(r,i){if(0===r.length||isNil(i))return!1;for(var t=i,a=0;a<r.length;){if(isNil(t)||!_has(r[a],t))return!1;t=t[r[a]],a+=1}return!0}));export default hasPath;

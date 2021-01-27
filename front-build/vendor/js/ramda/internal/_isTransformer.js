@@ -1,0 +1,1 @@
+export default function _isTransformer(n){return null!=n&&"function"==typeof n["@@transducer/step"]}

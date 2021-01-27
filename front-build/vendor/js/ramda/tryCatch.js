@@ -1,0 +1,1 @@
+import _arity from"./internal/_arity.js";import _concat from"./internal/_concat.js";import _curry2 from"./internal/_curry2.js";var tryCatch=_curry2((function(r,t){return _arity(r.length,(function(){try{return r.apply(this,arguments)}catch(r){return t.apply(this,_concat([r],arguments))}}))}));export default tryCatch;

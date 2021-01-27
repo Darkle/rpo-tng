@@ -1,0 +1,1 @@
+import nth from"./nth.js";var last=nth(-1);export default last;

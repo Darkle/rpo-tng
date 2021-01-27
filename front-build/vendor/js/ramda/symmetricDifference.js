@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import concat from"./concat.js";import difference from"./difference.js";var symmetricDifference=_curry2((function(r,e){return concat(difference(r,e),difference(e,r))}));export default symmetricDifference;

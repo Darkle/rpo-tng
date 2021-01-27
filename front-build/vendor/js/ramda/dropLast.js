@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _dispatchable from"./internal/_dispatchable.js";import _dropLast from"./internal/_dropLast.js";import _xdropLast from"./internal/_xdropLast.js";var dropLast=_curry2(_dispatchable([],_xdropLast,_dropLast));export default dropLast;

@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";import pathOr from"./pathOr.js";var propOr=_curry3((function(r,p,t){return pathOr(r,[p],t)}));export default propOr;

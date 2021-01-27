@@ -1,0 +1,1 @@
+import _concat from"./internal/_concat.js";import _createPartialApplicator from"./internal/_createPartialApplicator.js";var partial=_createPartialApplicator(_concat);export default partial;

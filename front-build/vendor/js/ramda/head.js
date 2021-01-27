@@ -1,0 +1,1 @@
+import nth from"./nth.js";var head=nth(0);export default head;

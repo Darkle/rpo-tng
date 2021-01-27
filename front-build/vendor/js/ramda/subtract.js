@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";var subtract=_curry2((function(r,t){return Number(r)-Number(t)}));export default subtract;

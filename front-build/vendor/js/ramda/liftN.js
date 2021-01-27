@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _reduce from"./internal/_reduce.js";import ap from"./ap.js";import curryN from"./curryN.js";import map from"./map.js";var liftN=_curry2((function(r,t){var o=curryN(r,t);return curryN(r,(function(){return _reduce(ap,map(o,arguments[0]),Array.prototype.slice.call(arguments,1))}))}));export default liftN;

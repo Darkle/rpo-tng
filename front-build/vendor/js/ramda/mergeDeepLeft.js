@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import mergeDeepWithKey from"./mergeDeepWithKey.js";var mergeDeepLeft=_curry2((function(e,r){return mergeDeepWithKey((function(e,r,t){return r}),e,r)}));export default mergeDeepLeft;

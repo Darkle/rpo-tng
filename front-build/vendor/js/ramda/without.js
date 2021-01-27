@@ -1,0 +1,1 @@
+import _includes from"./internal/_includes.js";import _curry2 from"./internal/_curry2.js";import flip from"./flip.js";import reject from"./reject.js";var without=_curry2((function(r,t){return reject(flip(_includes)(r),t)}));export default without;

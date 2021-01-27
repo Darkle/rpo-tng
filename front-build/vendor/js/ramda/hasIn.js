@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";var hasIn=_curry2((function(r,n){return r in n}));export default hasIn;

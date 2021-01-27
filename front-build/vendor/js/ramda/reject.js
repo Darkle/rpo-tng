@@ -1,0 +1,1 @@
+import _complement from"./internal/_complement.js";import _curry2 from"./internal/_curry2.js";import filter from"./filter.js";var reject=_curry2((function(r,e){return filter(_complement(r),e)}));export default reject;

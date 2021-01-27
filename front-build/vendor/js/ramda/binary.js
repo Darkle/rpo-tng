@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import nAry from"./nAry.js";var binary=_curry1((function(r){return nAry(2,r)}));export default binary;

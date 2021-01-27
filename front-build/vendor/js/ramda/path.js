@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import paths from"./paths.js";var path=_curry2((function(r,t){return paths([r],t)[0]}));export default path;

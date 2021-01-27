@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import pipeWith from"./pipeWith.js";import reverse from"./reverse.js";var composeWith=_curry2((function(r,e){return pipeWith.apply(this,[r,reverse(e)])}));export default composeWith;

@@ -1,0 +1,1 @@
+import slice from"./slice.js";var init=slice(0,-1);export default init;

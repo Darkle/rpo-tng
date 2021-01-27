@@ -1,0 +1,1 @@
+import reduceBy from"./reduceBy.js";var indexBy=reduceBy((function(e,r){return r}),null);export default indexBy;

@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _isNumber from"./internal/_isNumber.js";var range=_curry2((function(r,e){if(!_isNumber(r)||!_isNumber(e))throw new TypeError("Both arguments to range must be numbers");for(var u=[],n=r;n<e;)u.push(n),n+=1;return u}));export default range;

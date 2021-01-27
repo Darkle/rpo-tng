@@ -1,0 +1,1 @@
+import _isFunction from"./_isFunction.js";import _toString from"./_toString.js";export default function _assertPromise(t,i){if(null==i||!_isFunction(i.then))throw new TypeError("`"+t+"` expected a Promise, received "+_toString(i,[]))}

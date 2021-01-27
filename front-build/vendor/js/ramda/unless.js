@@ -1,0 +1,1 @@
+import _curry3 from"./internal/_curry3.js";var unless=_curry3((function(r,u,n){return r(n)?n:u(n)}));export default unless;

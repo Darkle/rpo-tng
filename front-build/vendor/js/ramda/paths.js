@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import _isInteger from"./internal/_isInteger.js";import nth from"./nth.js";var paths=_curry2((function(r,t){return r.map((function(r){for(var n,e=t,i=0;i<r.length;){if(null==e)return;n=r[i],e=_isInteger(n)?nth(n,e):e[n],i+=1}return e}))}));export default paths;

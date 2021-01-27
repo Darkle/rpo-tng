@@ -1,0 +1,1 @@
+import _includes from"./internal/_includes.js";import _curry2 from"./internal/_curry2.js";import _filter from"./internal/_filter.js";import flip from"./flip.js";import uniq from"./uniq.js";var intersection=_curry2((function(r,i){var n,t;return r.length>i.length?(n=r,t=i):(n=i,t=r),uniq(_filter(flip(_includes)(n),t))}));export default intersection;

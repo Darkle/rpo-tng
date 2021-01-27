@@ -1,0 +1,1 @@
+import _objectAssign from"./internal/_objectAssign.js";import _curry2 from"./internal/_curry2.js";var mergeRight=_curry2((function(r,t){return _objectAssign({},r,t)}));export default mergeRight;

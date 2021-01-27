@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import sum from"./sum.js";var mean=_curry1((function(r){return sum(r)/r.length}));export default mean;

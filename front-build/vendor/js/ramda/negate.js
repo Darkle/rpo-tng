@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";var negate=_curry1((function(r){return-r}));export default negate;

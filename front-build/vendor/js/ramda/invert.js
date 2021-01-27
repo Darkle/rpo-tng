@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import _has from"./internal/_has.js";import keys from"./keys.js";var invert=_curry1((function(r){for(var t=keys(r),e=t.length,n=0,a={};n<e;){var o=t[n],s=r[o],i=_has(s,a)?a[s]:a[s]=[];i[i.length]=o,n+=1}return a}));export default invert;

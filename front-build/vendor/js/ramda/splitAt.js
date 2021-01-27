@@ -1,0 +1,1 @@
+import _curry2 from"./internal/_curry2.js";import length from"./length.js";import slice from"./slice.js";var splitAt=_curry2((function(r,t){return[slice(0,r,t),slice(r,length(t),t)]}));export default splitAt;

@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import curryN from"./curryN.js";var curry=_curry1((function(r){return curryN(r.length,r)}));export default curry;

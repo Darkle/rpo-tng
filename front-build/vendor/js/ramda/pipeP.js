@@ -1,0 +1,1 @@
+import _arity from"./internal/_arity.js";import _pipeP from"./internal/_pipeP.js";import reduce from"./reduce.js";import tail from"./tail.js";export default function pipeP(){if(0===arguments.length)throw new Error("pipeP requires at least one argument");return _arity(arguments[0].length,reduce(_pipeP,arguments[0],tail(arguments)))}

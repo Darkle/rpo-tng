@@ -1,0 +1,1 @@
+var T=function(){return!0};export default T;

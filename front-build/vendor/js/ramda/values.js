@@ -1,0 +1,1 @@
+import _curry1 from"./internal/_curry1.js";import keys from"./keys.js";var values=_curry1((function(r){for(var e=keys(r),t=e.length,u=[],o=0;o<t;)u[o]=r[e[o]],o+=1;return u}));export default values;
